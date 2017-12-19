@@ -1,0 +1,59 @@
+body {
+	background-color: #D3D3D3;
+}
+
+.dashbullet {
+	list-style-type: '-';
+}
+
+ul{
+	margin-top: 0;
+}
+
+hr, p {
+	margin: 0;
+}
+
+.header {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0;
+	border-bottom-style: dashed;
+	border-bottom-width: 1;
+}
+
+.bold {
+	font-weight:bold;
+}
+
+.container {
+	max-width: 700px;
+	margin: auto;
+	border-style: solid;
+	border-width: 2px;
+	padding: 17px;
+	background-color: white;
+}
+
+.rightalign {
+	float: right;
+}
+
+
+.progress {
+	margin-bottom:10; 
+}
+
+.skill {
+	font-size: 12.5px;
+}
+
+.left {
+	float:left;
+	width: 50%;
+}
+
+.right {
+	float:right;
+	width: 50%;
+}
