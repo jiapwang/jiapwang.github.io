@@ -1,102 +1,129 @@
 
 <html> 
 	<head> 
-		<title> Jia Wang's Resume </title>
+		<title> Jia Wang</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		
 	</head>
 	<body>
+	
+	<div class = "container">
 		<div class = "container">
-			<h2>Jia Wang</h2>
-			<a href = "Jia_Wang_Resume.docx" download title ="Jia_Wang_Resume"><button type="button" class="btn btn-outline-success btn-sm">Resume</button></a>
-			<a href = "mailto:w.jia@yahoo.com" title = "w.jia@yahoo.com"><button type="button" class="btn btn-outline-dark btn-sm">E-mail</button></a>
-			<a href = "http://www.github.com/jiapwang" title ="github.com/jiapwang" target="_blank"><button type="button" class="btn btn-outline-secondary btn-sm">GitHub</button></a>
-			<a href = "http://www.linkedin.com/in/JiaWang314" title = "linkedin.com/in/JiaWang314" target="_blank"><button type="button" class="btn btn-outline-info btn-sm">LinkedIn</button></a>
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			  <a class="navbar-brand" href="#">Jia Wang</a>
+			  <button class="navbar-toggler" type="button" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse">
+<!-- 			    <ul class="navbar-nav">
+			      <li class="nav-item active">
+			        <a class="nav-link" data-toggle="collapse" href="#summary">About <span class="sr-only">(current)</span></a>
+			      </li>
+			    </ul> -->
+			    <ul class = "navbar-nav ml-auto">
+			      <li>
+					<a class = "nav-link" href = "http://www.github.com/jiapwang" title ="github.com/jiapwang" target="_blank">GitHub</a>
+				  </li>
+				  <li>
+					<a class = "nav-link" href = "http://www.linkedin.com/in/JiaWang314" title = "linkedin.com/in/JiaWang314" target="_blank">LinkedIn</a>
+				  </li>
+			      <li class = "nav-item">
+					<a class = "nav-link" href = "mailto:w.jia@yahoo.com" title = "w.jia@yahoo.com">E-mail</a>
+				  </li>
+			    </ul>
+			  </div>
+			</nav>
+		</div>
 
-			<br><br>
-			<div class = "education">
+		<div class = "contentcontainer"> 
+			<div id = "education">
 				<p class = "header">Education:</p>
 				<p class = "bold">Brooklyn College, City University of New York<br>
-					Bachelor of Science, Computer Science</p> <br>
+					Bachelor of Science, Computer Science</p><br>
+			
+
+				<div id="accordion" role="tablist">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingCourses">
+				      <h5 class="mb-0">
+				        <a data-toggle="collapse" href="#collapseCourses" aria-expanded="true" aria-controls="collapseCourses">
+				          Relevant Courses:
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseCourses" class="collapse" role="tabpanel" aria-labelledby="headingCourses" data-parent="#accordion">
+				      <div class="card-body">
+				        <div class = "left">
+				        	<ul class = "dashbullet">
+				        		<li>Introduction to Programming in C++</li>
+				        		<li>Advanced C++</li>
+				        		<li>Java</li>
+				        		<li>Analysis of Algorithms</li>
+				        	</ul>
+				        </div>
+				        <div class = "right">
+				        	<ul>
+				        		<li>Discrete Structures</li>
+				        		<li>Data Structures</li>
+				        		<li>Object Oriented Programming</li>
+				        		<li>Information Security</li>
+				        	</ul>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+				<div id="accordion2" role="tablist">
+				  <div class="card">
+				    <div class="card-header" role="tab" id="headingExam">
+				      <h5 class="mb-0">
+				        <a data-toggle="collapse" href="#collapseCivilExams" aria-expanded="true" aria-controls="collapseCivilExams">
+				          Civil Examinations:
+				        </a>
+				      </h5>
+				    </div>
+
+				    <div id="collapseCivilExams" class="collapse" role="tabpanel" aria-labelledby="headingExam" data-parent="#accordion2">
+				      <div class="card-body">
+						<table class="table table-hover">
+						  <thead>
+						    <tr>
+						      <th scope="col">Exam Title</th>
+						      <th scope="col">Exam Number</th>
+						      <th scope="col">Score</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td>Computer Programmer Analyst Trainee</td>
+						      <td>5017</td>
+						      <td>90%</td>
+						    </tr>
+						    <tr>
+						      <td>Customer Information Representative</td>
+						      <td>7042</td>
+						      <td>88%</td>
+						    </tr>
+						  </tbody>
+						</table>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 
 
-			<div id="accordion" role="tablist">
-			  <div class="card">
-			    <div class="card-header" role="tab" id="headingCourses">
-			      <h5 class="mb-0">
-			        <a data-toggle="collapse" href="#collapseCourses" aria-expanded="true" aria-controls="collapseCourses">
-			          Relevant Courses:
-			        </a>
-			      </h5>
-			    </div>
-
-			    <div id="collapseCourses" class="collapse" role="tabpanel" aria-labelledby="headingCourses" data-parent="#accordion">
-			      <div class="card-body">
-			        <div class = "left">
-			        	<ul class = "dashbullet">
-			        		<li>Introduction to Programming in C++</li>
-			        		<li>Advanced C++</li>
-			        		<li>Java</li>
-			        		<li>Analysis of Algorithms</li>
-			        	</ul>
-			        </div>
-			        <div class = "right">
-			        	<ul class = "dashbullet">
-			        		<li>Discrete Structures</li>
-			        		<li>Data Structures</li>
-			        		<li>Object Oriented Programming</li>
-			        		<li>Information Security</li>
-			        	</ul>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
-			</div>
 
 
-			<br>
-			<div id="accordion2" role="tablist">
-			  <div class="card">
-			    <div class="card-header" role="tab" id="headingExam">
-			      <h5 class="mb-0">
-			        <a data-toggle="collapse" href="#collapseCivilExams" aria-expanded="true" aria-controls="collapseCivilExams">
-			          Civil Examinations:
-			        </a>
-			      </h5>
-			    </div>
 
-			    <div id="collapseCivilExams" class="collapse" role="tabpanel" aria-labelledby="headingExam" data-parent="#accordion2">
-			      <div class="card-body">
-					<table class="table table-hover">
-					  <thead>
-					    <tr>
-					      <th scope="col">Exam Title</th>
-					      <th scope="col">Exam Number</th>
-					      <th scope="col">Score</th>
-					    </tr>
-					  </thead>
-					  <tbody>
-					    <tr>
-					      <td>Computer Programmer Analyst Trainee</td>
-					      <td>5017</td>
-					      <td>90%</td>
-					    </tr>
-					    <tr>
-					      <td>Customer Information Representative</td>
-					      <td>7042</td>
-					      <td>88%</td>
-					    </tr>
-					  </tbody>
-					</table>
-			      </div>
-			    </div>
-			  </div>
-			</div>
+			
 
 
-			<div class = "summary">
+			<div id = "summary">
 				<br><p class = "header">Summary:</p>
 				<p>Skilled programmer with working knowledge of Python, Java, C++, C#, SQL, HTML, CSS, and BootStrap and knowledgeable using MySQL workbench, Cacti, Nagios, Sublime Text, Eclipse, Xcode, Codeblocks, and GitHub. Proficient with Windows, Mac OS, and Linux. Highly detail-oriented, analytical, and strong teamwork and problem-solving skills. Have developed extensive experience in IPDVS, script writing and server operations.</p><br>
 
@@ -114,7 +141,7 @@
 				</div>
 			</div>
 
-			<div class = "Experience">
+			<div id = "experience">
 				<p class = "header">Work Experiences:</p>
 				
 				<p><span class = "bold">New York City Department of Education</span> -- Brooklyn, NY
@@ -157,18 +184,19 @@
 				</ul>
 			</div>
 
-			<div class = "projects">
-				<p class = "header">Course Projects:</p>
+			<div id = "projects">
+				<p class = "header">Projects:</p>
 				<p class = "bold">Design and Implementation 1</p>
 				<p><span class = "bold">Pong: </span> Created a two-player game using Java in Eclipse. The objective of the game was to get the opponent's life count to zero. The game consisted of two paddles and a ball. With each contact with the paddle, the ball increased in speed. A player loses one life if they miss returning the ball. Upon losing a life the ball respawns on the respective side of the window. When one of the players' life count reached zero, a window popped up announcing and congratulating the winner.</p><br>
 
 				<p class = "bold">Object Oriented Programming</p>
 				<p><span class = "bold">Bot Trust: </span>Created a simulation using Java in Eclipse. The simulation consisted of two circles representing a blue and orange robot and one hundred squares representing the buttons the robots may need to push. As the simulation progressed, the robots, the buttons, the actions of the robots, and the time were drawn onto the screen.</p>
 			</div>	
-
-
-
 		</div>
+		</div>
+		</div>
+
+	</div>
 
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
