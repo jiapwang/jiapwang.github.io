@@ -1,6 +1,6 @@
 .navbar-brand {
 	font-family: Palatino Linotype;
-
+	border
 }
 
 ul{
@@ -47,6 +47,6 @@ hr, p {
 }
 
 body {
-	padding-top: 55px;
+	padding-top: 65px;
 }
 
