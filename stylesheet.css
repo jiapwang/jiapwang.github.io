@@ -3,11 +3,8 @@
 	border
 }
 
-ul{
-	margin-top: 0;
-}
 
-hr, p {
+p {
 	margin: 0;
 }
 
@@ -28,8 +25,8 @@ hr, p {
 }
 
 
-.progress {
-	margin-bottom:10; 
+.progress, .section {
+	margin-bottom:10px; 
 }
 
 .skill {
@@ -50,3 +47,6 @@ body {
 	padding-top: 65px;
 }
 
+.card, .skillbar {
+	margin-top: 10px;
+}
