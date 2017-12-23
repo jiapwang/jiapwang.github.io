@@ -3,17 +3,8 @@
 	border
 }
 
-
 p {
 	margin: 0;
-}
-
-.header {
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 0;
-	border-bottom-style: dashed;
-	border-bottom-width: 1;
 }
 
 .bold {
@@ -43,10 +34,12 @@ p {
 	width: 50%;
 }
 
-body {
-	padding-top: 65px;
-}
-
 .card, .skillbar {
 	margin-top: 10px;
+}
+
+
+#navpillContainer {
+	position: absolute; 
+	top: 65px;
 }
