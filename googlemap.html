@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <title>Jia Wang</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+    <style>
+       body {
+        padding-top: 100px;
+       }
+       #map {
+        height: 500px;
+        width: 100%;
+       }
+    </style>
+
+  </head>
+  <body>
+    <div class = "container">
+      <div id = "navbarContainer" class = "container">
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#">Jia Wang</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id = "navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+              </li>
+              <li class = "nav-item active">
+                <a class = "nav-link" href = "">Adventure Map<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+            <ul class = "navbar-nav ml-auto">
+              <li>
+            <a class = "nav-link" href = "http://www.github.com/jiapwang" title ="github.com/jiapwang" target="_blank">GitHub</a>
+            </li>
+            <li>
+            <a class = "nav-link" href = "http://www.linkedin.com/in/JiaWang314" title = "linkedin.com/in/JiaWang314" target="_blank">LinkedIn</a>
+            </li>
+              <li class = "nav-item">
+            <a class = "nav-link" href = "mailto:w.jia@yahoo.com" title = "w.jia@yahoo.com">E-mail</a>
+            </li>
+            </ul>
+          </div>
+        </nav>
+      </div> <!-- End of navbar container -->
+
+
+      <div id="map"></div>
+      <script>
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 5,
+            center: {lat: 40.6782, lng: -73.9442}
+          });
+
+          addMarker({coords:{lat: 40.6782, lng: -73.9442},content:'Brooklyn'});
+          addMarker({coords:{lat: 40.6440982, lng: -74.0725489},content:'St. George Terminal'});
+          addMarker({coords:{lat: 41.2846, lng: -74.0006},content:'Bear Mountain'});
+          addMarker({coords:{lat: 41.141251, lng: -74.0594944},content:'Kumo Sushi and Lounge'});
+          addMarker({coords:{lat: 40.988702, lng: -73.907154},content:'Giant Stairs'});
+          addMarker({coords:{lat: 43.165744, lng: -73.117366},content:'Equinox'});
+          addMarker({coords:{lat: 40.6398, lng: -73.2545},content:'Captree State Park'});
+          addMarker({coords:{lat: 38.2527, lng: -85.7585},content:'Louisville'});
+          addMarker({coords:{lat: 26.0745, lng: 119.2965},content:'Fuzhou'});
+          addMarker({coords:{lat: 25.9773035, lng: 119.6305968},content:'Jinfeng'});
+          addMarker({coords:{lat: 24.4798, lng: 118.0894},content:'Xiamen'});
+          addMarker({coords:{lat: 24.4463, lng: 118.0662},content:'Gulangyu'});
+
+          function addMarker(props) {
+            var marker = new google.maps.Marker({
+              position: props.coords, 
+              map: map,
+            });
+
+            if(props.content){
+              var infoWindow = new google.maps.InfoWindow({
+                content:props.content
+              });
+
+              marker.addListener('click', function(){
+                infoWindow.open(map, marker);
+              });
+            }
+          }
+        }
+
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key= AIzaSyDtwZbNxXm6xUumfalLN1AsM3jbnuJH73Y &callback=initMap">
+      </script>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
