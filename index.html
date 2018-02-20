@@ -68,7 +68,7 @@
 						<p class = "bold">Brooklyn College, City University of New York<br>
 							Bachelor of Science, Computer Science</p>
 
-						<div id="accordion" role="tablist">
+						<div id="accordionCourses" role="tablist">
 						  <div class="card">
 						    <div class="card-header" role="tab" id="headingCourses">
 						      <h5 class="mb-0">
@@ -78,7 +78,7 @@
 						      </h5>
 						    </div>
 
-						    <div id="collapseCourses" class="collapse show" role="tabpanel" aria-labelledby="headingCourses" data-parent="#accordion">
+						    <div id="collapseCourses" class="collapse show" role="tabpanel" aria-labelledby="headingCourses" data-parent="#accordionCourses">
 						      <div class="card-body">
 						        <div class = "left">
 						        	<ul class = "dashbullet">
@@ -101,26 +101,60 @@
 						      </div>
 						    </div>
 						  </div>
-						</div> <!-- End of Courses accordion -->
+						</div> <!-- End of Courses accordionCourses -->
 					</div> <!-- End of education -->
 
 					<div id = "summary" class = "section tab-pane fade" role = "tab">
-						<p>Skilled programmer with working knowledge of Python, Java, C++, C#, SQL, HTML, CSS, and Bootstrap. Knowledgeable using MySQL workbench, Cacti, Nagios, Sublime Text, Eclipse, Xcode, Codeblocks, and Github. Proficient with Windows, Mac OS, and Linux. Highly detail-oriented, analytical, and strong teamwork and problem-solving skills. Have developed extensive experience in IPDVS, script writing and server operations.</p>
+						<p>Skilled programmer with working knowledge of Python, Java, C++, Javascript, C#, SQL, HTML, CSS, and Bootstrap. Avid problem solver, highly detail-oriented, and strong teamwork skills. Dedicated to providing high quality results by learning new processes and technologies and taking ownership of projects.</p><br>
 
-						<div class = "skillbar">
-							<p class = "skill">C#, Github, Xcode, Codeblocks, Cacti, and Nagios </p>
-							<div class="progress">
-							  <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<p class = "skill">C++, CSS, SQL, Bootstrap, Eclipse, MySQL Workbench, Mac OS, and Linux:</p>
-							<div class="progress">
-							  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-							<p class = "skill">Java, Python, HTML, Sublime Text, and Windows:</p>
-							<div class="progress">
-							  <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div> <!-- End of skillbar -->
+
+
+						<div id="accordionSkills" role="tablist">
+						  <div class="card">
+						    <div class="card-header" role="tab" id="headingSkills">
+						      <h5 class="mb-0">
+						        <a data-toggle="collapse" href="#collapseSkills" aria-expanded="true" aria-controls="collapseSkills">
+						          Skills:
+						        </a>
+						      </h5>
+						    </div>
+
+						    <div id="collapseSkills" class="collapse show" role="tabpanel" aria-labelledby="headingSkills" data-parent="#accordionSkills">
+						      <div class="card-body">
+								<div class = "skilltable">
+									<table class="table table-sm">
+									  <tbody>
+									    <tr>
+									      <td><strong>Programming Languages</strong></td>
+									      <td>Python, Java, C++, Javascript, C#, SQL, HTML, CSS</td>
+									    </tr>
+									    <tr>
+									      <td><strong>IDEs<strong></td>
+									      <td>Sublime Text, Eclipse, Xcode</td>
+									    </tr>
+									    <tr>
+									      <td><strong>Framework</strong></td>
+									      <td>Bootstrap</td>
+									    </tr>
+									    <tr>
+									      <td><strong>Version Control</strong></td>
+									      <td>Git</td>
+									    </tr>
+									    <tr>
+									      <td><strong>Operating Systems</strong></td>
+									      <td>Windows, Mac OS, Linux CentOS</td>
+									    </tr>
+									    <tr>
+									      <td><strong>Miscellaneous Software</strong></td>
+									      <td>MySQL Workbench, Cacti, Nagios, VMware ESXi, Microsoft Office</td>
+									    </tr>
+									  </tbody>
+									</table>
+								</div> <!-- End of skilltable -->
+						      </div>
+						    </div>
+						  </div>
+						</div> <!-- End of Courses accordionSkill -->
 					</div><!-- End of summary -->
 
 
@@ -130,13 +164,14 @@
 						
 						<p class = "bold">Enterprise Management Support Engineer</p>
 						<ul>
-							<li><p>Write Python scripts to collect enterprise device information and retrieve information from mySQL database. Generate daily reports using gathered information and communicate the information to the appropriate teams for quick problem resolution.</p></li>
-							<li><p>Test discovery and data collection scripts written by fellow team members, report bugs and anomalies to appropriate individuals, and hold discussions to fix bugs, anomalies, and other issues related to the scripts.</p></li>
-							<li><p>Review, debug, and optimize legacy Python scripts. This enabled legacy scripts to be more effective and efficient.</p></li>
-							<li><p>Draft detailed procedures for updating and checking server software and configurations which enabled future interns and engineers to resolve common issues with ease.</p></li>
-							<li><p>Test new applications, document and report bugs, and offer suggestions on bettering user experience.</p></li>
+							<li><p>Write Python scripts to collect enterprise device information and store/retrieve information to/from database. Generate daily reports using database data to enable team members to access and remediate issues quickly.</p></li>
+							<li><p>Test discovery and data collection scripts written by fellow team members, report bugs and anomalies to appropriate engineers, and hold discussions to fix issues.</p></li>
+							<li><p>Review, debug, and optimize previously written Python scripts.</p></li>
+							<li><p>Draft detailed procedures for setting up and troubleshooting system software and hardware.</p></li>
+							<li><p>Tested new applications, document and report bugs, and offer suggestions on bettering user experiences.</p></li>
 							<li><p>Troubleshoot and resolve network host anomalies and configuration errors.</p></li>
-							<li><p>Ensured database data integrity by verifying data with dedicated teams and by performing frequent maintenance operations.</p></li>
+							<li><p>Ensured database data integrity by verifying data with dedicated teams or by manually checking host devices. Perform maintenance as needed to update, add, or delete data.</p></li>
+							<li><p>Set up and configure virtual machine servers for monitoring enterprise network.</p></li>
 						</ul>
 
 						<p><span class = "bold">New York City Department of Education</span> -- Brooklyn, NY
@@ -144,7 +179,7 @@
 						
 						<p class = "bold">Division of Internet Protocol Digital Video Surveillance (IPDVS) Deployment Engineer</p>
 						<ul>
-							<li><p>Engaged and collaborated with team members to create a Python script that remotely connected to IPDVS servers to collect password information, server serial and model number, and operating system version. The script data allowed multiple teams to quickly search and retrieve information for troubleshooting server related issues and streamlining server and software replacement.</p></li>
+							<li><p>Engaged and collaborated with team members to create a Python script that connected to IPDVS servers to collect password, server serial and model number, and operating system information. The data gathered by the script allowed multiple teams to quickly search and retrieve information for troubleshooting server related issues and streamlining server and software replacement.</p></li>
 							<li><p>Developed understanding of IPDVS standard. Assessed camera conditions, functionalities, direction according to floor plans, and ensured that required software were installed and configured.</p></li>
 							<li><p>Traveled to over 20 NYC schools across the five boroughs to assess IPDVS equipment installation. Drafted detailed reports based on assessments outlining items that were not completed per IPDVS standards and oversaw the completion of said punch-list items ensuring the safety of numerous students and school officials, and saving the DOE up to hundreds of thousands of dollars.</p></li>
 							<li><p>Communicated and collaborated with school custodial engineers to inquire about broken or defective air conditioning units and relayed the information to the manager for repair approval/disapproval; this process ensured budget was properly allocated for its immediate and intended purpose.</p></li>
@@ -166,11 +201,11 @@
 
 
 					<div id="projects" class="section tab-pane fade" role="tab">
-						<p><span class = "bold">Pong: </span> Created a two-player game using Java in Eclipse. The objective of the game was to get the opponent's life count to zero. The game consisted of two paddles and a ball. With each contact with the paddle, the ball increased in speed. A player loses one life if they miss returning the ball. Upon losing a life the ball respawns on the respective side of the window. When one of the players' life count reached zero, a window popped up announcing and congratulating the winner.</p>
+						<p><span class = "bold">Pong: </span> A two player game developed using Java in Eclipse. The objective of the game is to get the opponent's life count to zero. The game consist of two paddles and a ball. With each contact with the paddle, the ball increases in speed. A player loses a life if they fail to return a ball. Upon losing a life the ball respawns on the respective side of the window. When one of the players' life count reached zero, a window popped up announcing and congratulating the winner.</p>
 
-						<p><span class = "bold">Bot Trust: </span>Created a simulation using Java in Eclipse. The simulation consisted of two circles representing a blue and orange robot and one hundred squares representing the buttons the robots may need to push. As the simulation progressed, the robots, the buttons, the actions of the robots, and the time were drawn onto the screen.</p>
+						<p><span class = "bold">Bot Trust: </span> A simulation developed using Java in Eclipse. The simulation consisted of two circles representing a blue and orange robot and one hundred squares representing the buttons the robots may need to push. As the simulation progresses, the robots, the buttons, the actions of the robots, and the time are drawn onto the screen.</p>
 
-						<p><span class = "bold">Personal Website (in progress): </span>Created a personal website using HTML, CSS, Bootstrap and Google Maps API. The website presents the content of my resume and the places I have visited.</p>
+						<p><span class = "bold">Personal Website: </span>Developed using HTML, CSS, Bootstrap, and Google Maps API. The website presents my skills, work experiences, and places I have visited.</p>
 					</div>	<!-- End of projects -->
 
 
@@ -194,50 +229,6 @@
 						  </tbody>
 						</table>
 					</div> <!-- End of civilExams -->
-
-
-					<div id="civilExams" class="section tab-pane fade" role="tab">
-						<p class = "header">Civil Examinations</p>
-						<table class="table table-hover">
-						  <thead>
-						    <tr>
-						      <th scope="col">Exam Title</th>
-						      <th scope="col">Exam Number</th>
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <td>Computer Programmer Analyst Trainee</td>
-						      <td>5017</td>
-						    </tr>
-						    <tr>
-						      <td>Customer Information Representative</td>
-						      <td>7042</td>
-						    </tr>
-						  </tbody>
-						</table>
-					</div> <!-- End of civilExams -->				<div id="civilExams" class="section tab-pane fade" role="tab">
-						<p class = "header">Civil Examinations</p>
-						<table class="table table-hover">
-						  <thead>
-						    <tr>
-						      <th scope="col">Exam Title</th>
-						      <th scope="col">Exam Number</th>
-						    </tr>
-						  </thead>
-						  <tbody>
-						    <tr>
-						      <td>Computer Programmer Analyst Trainee</td>
-						      <td>5017</td>
-						    </tr>
-						    <tr>
-						      <td>Customer Information Representative</td>
-						      <td>7042</td>
-						    </tr>
-						  </tbody>
-						</table>
-					</div> <!-- End of civilExams -->
-
 				</div> <!-- End of tab-contents -->
 			</div> <!-- End of navpillContainer -->
 		</div>
